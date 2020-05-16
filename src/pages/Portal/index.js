@@ -35,7 +35,7 @@ export function SecondModal({ id }) {
 
   return (
     <Modal id={id}>
-      <div class="card h-25 w-25 mt-5">
+      <div class="card h-25 mt-5">
         <div class="card-header bg-warning">
           Modal {id}
           <button
@@ -66,7 +66,7 @@ export function ThirdModal({ id }) {
 
   return (
     <Modal id={id}>
-      <div class="card h-25 w-25 mt-5">
+      <div class="card h-25 mt-5">
         <div class="card-header bg-success">
           Modal {id}
           <button
