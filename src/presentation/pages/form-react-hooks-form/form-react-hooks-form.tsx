@@ -15,6 +15,17 @@ const FormReactHooksForm: React.FC = () => {
 
   const [imagePreview, setImagePreview] = useState([initialImagePreview]);
 
+  const { register, handleSubmit, control } = useForm({
+    defaultValues: {
+      form: [defaultValue]
+    }
+  });
+
+  const { fields, remove, append } = useFieldArray<FormData>({
+    control,
+    name: "form"
+  });
+
   const handleChangeImagePreview = async (event: any, index :number) => {
     const list: any = [...imagePreview];
     const reader = new FileReader();
@@ -49,18 +60,6 @@ const FormReactHooksForm: React.FC = () => {
     handleDeleteImagePreview(index)
     remove(index)
   }
-  
-
-  const { register, handleSubmit, control } = useForm({
-    defaultValues: {
-      form: [defaultValue]
-    }
-  });
-
-  const { fields, remove, append } = useFieldArray<FormData>({
-    control,
-    name: "form"
-  });
 
   const onSubmit = (data: FormData) => {
     console.log("data", data);
@@ -77,7 +76,7 @@ const FormReactHooksForm: React.FC = () => {
         <div className="container-forms">
           {fields.map((item, index) => (
             <Form key={index} onSubmit={handleSubmit(onSubmit)}>
-              <span role="button" onClick={() => twoCallsDelete(index)}></span>
+              <span role="button" onClick={() =>  twoCallsDelete(index)}></span>
               <div>
                 <img  src={imagePreview[index].imagePreview} alt="image"/>
                 <input type="file" name="image" ref={register}
