@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useFieldArray, useForm } from 'react-hook-form';
 import { Container, Form } from './form-react-hooks-form-styles';
-import imgUpload from '../../assets/upload.svg';
+import imgUpload from '../../assets/upload.png';
 
 type FormData = {
     image?: string
@@ -10,7 +10,7 @@ type FormData = {
 };
 
 const FormReactHooksForm: React.FC = () => {
-  const defaultValue: FormData = { image: '',name: "", description: "" };
+  const defaultValue: FormData = { image: 'teste',name: "Bill", description: "Luo" };
   const initialImagePreview = {imagePreview: imgUpload};
 
   const [imagePreview, setImagePreview] = useState([initialImagePreview]);
@@ -50,6 +50,7 @@ const FormReactHooksForm: React.FC = () => {
     remove(index)
   }
   
+
   const { register, handleSubmit, control } = useForm({
     defaultValues: {
       form: [defaultValue]
