@@ -1,7 +1,7 @@
   
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import React from 'react'
-import { makeFormReactHooksForm } from '../factories/pages'
+import { makeForm } from '../factories/pages'
 
 const Router: React.FC = () => {
 
@@ -9,7 +9,7 @@ const Router: React.FC = () => {
    
       <BrowserRouter>
         <Switch>
-          <Route path="/" exact component={makeFormReactHooksForm} />
+          <Route path="/" exact component={makeForm} />
         </Switch>
       </BrowserRouter>
    
