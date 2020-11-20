@@ -1,6 +1,6 @@
-# Formulários dinâmicos 
+# Modal com react
 
-Criado com typescript
+Criado com typescript e context
 
-![Gif](https://github.com/marina-santana/dynamic-forms/blob/main/video.gif "Formulários dinâmicos")
+![Gif](https://github.com/marina-santana/modal-reactjs/blob/main/video.gif "Modal com react")
 
