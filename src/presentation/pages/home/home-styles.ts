@@ -3,8 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   margin: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 
   button{
     max-width: 500px;
@@ -16,6 +15,10 @@ export const Container = styled.div`
     font-size: 1.25em;
     padding: 20px;
     margin-bottom: 20px;
+  }
+
+  button + button{
+    margin-left: 20px;
   }
  
 
