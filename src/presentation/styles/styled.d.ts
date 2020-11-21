@@ -4,13 +4,13 @@ import 'styled-components'
 declare module 'styled-components' {
   export interface DefaultTheme {
     colors: {
-      orange: string,
+      heliotrope: string,
+      bittersweet: string,
+      deepBlush: string,
       white: string,
-      whiteSmoke: string,
-      tundora: string,
       mineShaft: string,
-      doveGray: string,
-      translucid: string
+      scorpion: string,
+      translucide: string
     }
   }
 }

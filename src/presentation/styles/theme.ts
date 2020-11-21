@@ -2,13 +2,13 @@ import { DefaultTheme } from 'styled-components'
 
 const theme: DefaultTheme = {
   colors: {
-    orange: '#FFB55A',
+    heliotrope: '#C466FF',
+    bittersweet: '#FF7466',
+    deepBlush: '#E56B84',
     white: '#fff',
-    whiteSmoke: '#f5f5f5',
-    tundora: '#424242',
     mineShaft: '#333',
-    doveGray: '#696969',
-    translucid: 'rgba(255, 255, 255, 0.44)'
+    scorpion: '#5A5A5A',
+    translucide: 'rgba(60, 60, 60, 0.42)'
   }
 }
 
